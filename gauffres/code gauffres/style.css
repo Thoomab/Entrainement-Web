@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-family: "Verdana","Comic Sans MS",serif;
+}
+
+.header{
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+.header-index{
+    background: linear-gradient(to bottom, #5251513d, rgba(255, 192, 203, 0.808)), center top / cover url("../img/gauffres.jpg") fixed;
+    height: 250px;
+    width: auto;
+}
+
+.header-menu{
+    background: linear-gradient(to bottom, #5251513d, rgba(255, 192, 203, 0.808)), center top / cover url("../img/menu.jpg") fixed;
+    height: 250px;
+    width: auto;
+}
+
+.header-contact{
+    background: linear-gradient(to bottom, #5251513d, rgba(255, 192, 203, 0.808)), center bottom / cover url("../img/avis.jpg") fixed;
+    height: 250px;
+    width: auto;
+}
+
+.header img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.header-title{
+    text-align: center;
+    background-color: rgb(255, 189, 189);
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    font-family: "Little-days";
+    font-size: 40px; 
+}
+
+.header-nav{
+    background-color: rgb(255, 189, 189);
+    width: 100%;
+}
+
+.header-nav a {
+    text-align: center;
+    padding: 0 10px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: Corben;
+}
+
+.header-nav a:hover{
+    text-decoration: underline;
+    border-radius: 10px;
+    background-color: rgb(255, 152, 169);
+    color: red;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.entete{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.main{
+    background-color: pink;
+    padding: 2px 20px 20px 20px;
+ }
+
+ .main-title{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+ }
+
+.main p{
+    text-align: justify;
+}
+
+ .footer{
+    background-color: rgba(255, 0, 128, 0.884);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-style: italic;
+ }
+
+ .classique, .original ,.offres, .boissons, th, td{
+    background: rgba(255, 27, 187, 0.918);
+    border: solid 4px;
+    border-collapse: collapse;
+    border-color: rgb(124, 28, 250);
+ }
+
+ .name, .email, .firstname, .message{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+ }
+
+ .legend{
+    font-weight: bolder;
+    font-style: italic;
+ }
+
+button{
+    border-color: rgba(255, 27, 187, 0.918);
+    border-radius: 10px;
+    height: 30px;
+    width: auto;
+}
