@@ -28,8 +28,8 @@ body{
 }
 
 .header-contact{
-    background: linear-gradient(to bottom, #5251513d, rgba(255, 192, 203, 0.808)), center bottom / cover url("../img/avis.jpg") fixed;
-    height: 250px;
+    background: linear-gradient(to bottom, #5251513d, rgba(255, 192, 203, 0.808)), center top / cover url("../img/avis.jpg") fixed;
+    height: 400px;
     width: auto;
 }
 
@@ -90,6 +90,43 @@ body{
 
 .main p{
     text-align: justify;
+}
+
+.table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-menu-un{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.main-menu-deux{
+    display: flex;
+}
+
+.boissons-title{
+    margin-left: 300px;
+    margin-right: 10px;
+}
+
+.offres-title{
+    margin-right: 10px;
+}
+
+.classique-title{
+    margin-right: 55px;
+}
+
+.original-title{
+    margin-left: 300px;
+    margin-right: 118px;
+}
+
+.menu-text a{
+    color: rgba(255, 27, 187, 0.918);;
 }
 
  .footer{
