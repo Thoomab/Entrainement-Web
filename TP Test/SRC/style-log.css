@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(96, 164, 224);
+}
+
+.form-box{
+    border-radius: 25px;
+    border: solid white 1px;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+
+    font-size: 2em;
+    text-align: center;
+    color: aliceblue;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: white 2px solid;
+}
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+input::placeholder{
+    color: aliceblue;
+    opacity: .7;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    font-size: 1.2em;
+}
+
+.forget{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.forget a{
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+.forget label input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: solid 1px grey;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    border: aliceblue solid 1px;
+    background-color: rgb(49, 132, 206);
+    color: aliceblue;
+}
+
+.register, .main-page{
+    text-align: center;
+    color: aliceblue;
+    font-size: 1em;
+}
+
+.register{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid white 1px;
+}
+
+.register a, .main-page a{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.register a:hover, .main-page a:hover{
+    text-decoration: underline;
+}

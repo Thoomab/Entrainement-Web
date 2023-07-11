@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+h3 a{
+	margin-left: 5px;
+	color: aliceblue;
+}
+
+ion-icon{
+	position: relative;
+	top: 2px;
+}
+
+nav{
+	width: 100%;
+	background: rgb(96, 164, 224);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	font-size: 20px;
+	height: 50px;
+	box-shadow: 0 2px 5px grey;
+ }
+
+#princ{
+	display: flex;
+	position: fixed;
+	left: 20%;
+	margin-left: 10%;
+}
+
+nav ul, div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+}
+
+ nav ul li a{
+	padding: 5px;
+	margin: 0 5px;
+	color: aliceblue;
+	transition: .2s;
+ }
+ 
+ nav ul li a:hover{
+	border-radius: 10px;
+	background: rgba(0, 0, 255, .2);
+	text-decoration: underline;
+ }
+ 
+ #icons{
+	display: none;
+	font-size: 20px;
+ }
+
+@media only screen and (max-width: 1020px) {	
+	#princ{
+		display: flex;
+		position: fixed;
+		margin-left: 12%;
+	}
+}
+
+ @media only screen and (max-width: 950px){
+	nav h3{
+	   position: fixed;
+	   left: 20px;
+	   top: 20px;
+	}
+	#icons{
+	   display: block;
+	   position: fixed;
+	   right: 20px;
+	   top: 20px;
+	   color: aliceblue;
+	}
+	
+	#icons:before{
+	   content: "\2630";
+	}
+	
+	.active #icons:before{
+	   content: "\2715";
+	}
+	
+	nav ul{
+	   position: fixed;
+	   right: -100%;
+	   bottom: 0;
+	   text-align: center;
+	   justify-content: space-around;
+	   flex-direction: column;
+	   background: rgba(96, 164, 224, 1);
+	   width: 40%;
+	   height: 100%;
+	   transition: .25s;
+	   border-left: 1px solid grey;
+	}
+
+	nav.active ul{
+	   right: 0;
+	}
+
+	#princ{
+		display: none;
+	}
+	
+	#princ.active{
+		display: flex;
+		top: 50px;
+		right: -30%;
+		flex-direction: column;
+	}
+
+	#princ.active li{
+		margin-bottom: 20%;
+	}
+
+	#log.active{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		text-align: center;	
+		bottom: -450px;	
+	}
+ }
