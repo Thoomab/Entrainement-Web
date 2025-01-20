@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>soundWidget</class>
+ <widget class="QWidget" name="soundWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>902</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>771</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="3,2,2,3,2">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item row="2" column="3">
+     <widget class="QLabel" name="in_sampleRateLabel">
+      <property name="text">
+       <string>Echantillonage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLineEdit" name="in_sampleRateLineEdit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="out_sampleRateLabel">
+      <property name="text">
+       <string>Echantillonage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="toneLineEdit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="speakersLabel">
+      <property name="text">
+       <string>Sortie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="speakersComboBox"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="typeLabel">
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="durationLineEdit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="typeComboBox"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="durationLabel">
+      <property name="text">
+       <string>Durée</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="toneLabel">
+      <property name="text">
+       <string>Fréquence</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="out_sampleRateLineEdit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Minimum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>60</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="microphonesLabel">
+      <property name="text">
+       <string>Entrée</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QComboBox" name="microphonesComboBox"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>771</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PlayPauseButton">
+      <property name="text">
+       <string>Jouer</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="StartStopButton">
+      <property name="text">
+       <string>Enregistrer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>771</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutCanvas">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMinimumSize</enum>
+    </property>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>speakersComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>out_device_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>typeComboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>updateConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toneLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>updateConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>durationLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>updateConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>out_sampleRateLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>updateConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PlayPauseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>soundWidget</receiver>
+   <slot>toggle_output()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>microphonesComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>in_device_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>in_sampleRateLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>soundWidget</receiver>
+   <slot>updateConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StartStopButton</sender>
+   <signal>clicked()</signal>
+   <receiver>soundWidget</receiver>
+   <slot>toggle_input()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>733</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>updateConfiguration()</slot>
+  <slot>toggle_output()</slot>
+  <slot>toggle_input()</slot>
+  <slot>in_device_changed()</slot>
+  <slot>out_device_changed()</slot>
+ </slots>
+</ui>
