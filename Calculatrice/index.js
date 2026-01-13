@@ -1,7 +1,7 @@
 let cliqueAvant = []
 let cliqueApres = []
 let i = 0
-let operator
+let operator = 0
 let total
 
 function appuieTouche(idDuBouton){
@@ -14,7 +14,7 @@ function appuieTouche(idDuBouton){
                 result.value = "";
                 cliqueAvant = [];
                 cliqueApres = [];
-                operator = null
+                operator = 0
                 total = 0;
                 break;
             
@@ -96,6 +96,13 @@ function appuieTouche(idDuBouton){
                 console.log("=")
                 totUn = cliqueAvant.join("")
                 totDeux = cliqueApres.join("")
+
+                console.log(totUn)
+                console.log(totDeux)
+
+                if (operator === 0){
+                    total = parseFloat(totUn)
+                }
 
                 if (cliqueAvant[operator] === "+"){
                     total = parseFloat(totUn) + parseFloat(totDeux)
