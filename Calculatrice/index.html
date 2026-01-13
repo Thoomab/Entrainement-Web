@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div>
+            <h1>Calculatrice en Ligne</h1>
+            <table id="table">
+                <tr class="touche">
+                    <td colspan="3" class="ecran"><input type="text" id="affichage" name="affichage" disabled></td>
+                    <td id="reset" onclick="appuieTouche(this.id)">C</td>
+                </tr>
+
+                <tr class="touche">
+                    <td id="sept" onclick="appuieTouche(this.id)" class="chiffre">7</td>
+                    <td id="huit" onclick="appuieTouche(this.id)" class="chiffre">8</td>
+                    <td id="neuf" onclick="appuieTouche(this.id)" class="chiffre">9</td>
+                    <td id="diviser" onclick="appuieTouche(this.id)" class="operateur">/</td>
+                </tr>
+
+                <tr class="touche">
+                    <td id="quatre" onclick="appuieTouche(this.id)" class="chiffre">4</td>
+                    <td id="cinq" onclick="appuieTouche(this.id)" class="chiffre">5</td>
+                    <td id="six" onclick="appuieTouche(this.id)" class="chiffre">6</td>
+                    <td id="fois" onclick="appuieTouche(this.id)" class="operateur">*</td>
+                </tr>
+
+                <tr class="touche">
+                    <td id="un" onclick="appuieTouche(this.id)" class="chiffre">1</td>
+                    <td id="deux" onclick="appuieTouche(this.id)" class="chiffre">2</td>
+                    <td id="trois" onclick="appuieTouche(this.id)" class="chiffre">3</td>
+                    <td id="moins" onclick="appuieTouche(this.id)" class="operateur">-</td>
+                </tr>
+
+                <tr class="touche">
+                    <td colspan="2" id="zero" onclick="appuieTouche(this.id)" class="chiffre">0</td>
+                    <td id="egal" onclick="appuieTouche(this.id)" class="operateur">=</td>
+                    <td id="plus" onclick="appuieTouche(this.id)" class="operateur">+</td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>

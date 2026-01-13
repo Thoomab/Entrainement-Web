@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(192, 209, 224);
+    text-align: center;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    color: rgb(88, 165, 105);
+}
+
+table{
+    background-color: blueviolet;
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+table td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: grey;
+    color: aliceblue;
+    text-align: center;
+    border: solid 1px black;
+}
+
+table td:hover{
+    cursor: grab;
+    color: black;
+    transition: .3s;
+}
+
+#affichage{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.ecran{
+    background-color: rgb(88, 151, 151);
+    padding: 1rem;
+}
+
+.ecran input{
+    border-radius: 10px;
+}
+
+.operateur{
+    padding: 2rem;
+    background-color: rgb(201, 201, 22);
+}
+
+.chiffre{
+    padding: 2rem;
+    background-color: rgb(106, 206, 173);
+}
+
+#reset{
+    background-color: red;
+}
