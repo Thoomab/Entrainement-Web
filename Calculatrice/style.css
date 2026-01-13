@@ -1,4 +1,5 @@
 *{
+    margin : 0;
     box-sizing: border-box;
 }
 
@@ -8,6 +9,11 @@ body{
 }
 
 h1{
+    margin : 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px;
+    text-shadow: 5px 5px rgba(102, 66, 66, 0.096);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline;
     color: rgb(88, 165, 105);
@@ -17,7 +23,9 @@ table{
     background-color: blueviolet;
     margin: 0 auto;
     border: solid 1px black;
+    padding: 0.5rem;
     border-radius: 5px;
+    box-shadow: 5px 10px rgba(128, 128, 128, 0.575);
 }
 
 table td{
@@ -27,18 +35,9 @@ table td{
     background-color: grey;
     color: aliceblue;
     text-align: center;
-    border: solid 1px black;
-}
-
-table td:hover{
-    cursor: grab;
-    color: black;
-    transition: .3s;
-}
-
-#affichage{
-    padding: 1rem;
-    font-size: 1.2rem;
+    border: solid 5px black;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.699);
+    border-style: inset;
 }
 
 .ecran{
@@ -63,3 +62,41 @@ table td:hover{
 #reset{
     background-color: red;
 }
+
+#reset:hover{
+    background-color: rgb(153, 33, 33);
+}
+
+#affichage{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+table td:hover{
+    background-color: rgb(96, 161, 140);
+    cursor: grab;
+    color: black;
+    transition: .3s;
+}
+
+table td:active{
+    transform: translateY(4px);
+    color: brown;
+}
+
+#reset:active{
+    background-color: orange;
+}
+
+.operateur:hover{
+    background-color: rgb(175, 160, 23);
+}
+
+#egal{
+    background-color: rgb(143, 230, 14);
+}
+
+#egal:hover{
+    background-color: rgb(117, 175, 30);
+}
+
